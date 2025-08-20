@@ -28,18 +28,29 @@ body.dark {
     padding: 20px;
 }
 
+#mode-icon {
+    display: flex;
+    align-items: center;
+}
+
 .toggle-mode {
     position: fixed;
+    z-index: 20;
     top: 15px;
     right: 15px;
-    padding: 8px 12px;
+    padding: 14px 14px;
     cursor: pointer;
     background: #546e7a;
     color: #eceff1;
-    border-radius: 4px;
-    font-size: 0.9em;
+    border-radius: 8px;
+    font-size: 1.2em;
     font-weight: 500;
     transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
 }
 
 body.light .toggle-mode {
@@ -52,6 +63,13 @@ body.light .toggle-mode {
 
 body.light .toggle-mode:hover {
     background: #3f51b5;
+}
+
+.toggle-mode svg {
+    display: block;
+    margin: auto;
+    width: 32px;
+    height: 32px;
 }
 
 section {
@@ -270,8 +288,20 @@ body.dark .projects p {
     color: #b0bec5;
 }
 
-.projects a {
+.projects .command {
     color: #0288d1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.projects .failed-command {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body.dark .projects .failed-command {
+    color: #fc4545;
     text-decoration: none;
     font-weight: 500;
 }
