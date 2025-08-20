@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry's Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+    <div class="toggle-mode" onclick="toggleMode()">light | dark</div>
+    <div class="container">
+        <!-- Personal Info Section -->
+        <section id="personal-info">
+            <h2>$ whoami</h2>
+            <p>Henry</p>
+            <p>Full Stack Developer</p>
+            <p>Turning ideas into code, building fun projects and enjoy~</p>
+            <!--Terminal-->
+            <div class="terminal" id="terminal">
+                <p class="command">  </p>
+                <p class="command">$ unzip idea.tar.gz</p>
+                <p class="command">$ cmake --build</p>
+                <p id="terminal-typing" class="command">$ <span class="cursor"></span></p>
+            </div>
+            <p>Location: Hong Kong</p>
+            <p>Email: henryloth@hotmail.com</p>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="interests">
+            <h2>$ cat interests.txt</h2>
+            <div class="interests">
+                <div>
+                    <h3>Neovim (btw)</h3>
+                    <p>Editing like a pro, who doesn't like hjkl.</p>
+                </div>
+                <div>
+                    <h3>NixOS (btw)</h3>
+                    <p>Wait what? your dependency breaks?</p>
+                </div>
+                <div>
+                    <h3>Taekwondo</h3>
+                    <p>Heee haaa!</p>
+                </div>
+                <div>
+                    <h3>Tricking</h3>
+                    <p>Still working on it...</p>
+                </div>
+                <div>
+                    <h3>Driving</h3>
+                    <p>You do automatic? Manual is king bro.</p>
+                </div>
+                <div>
+                    <h3>HK & TW Indie Music</h3>
+                    <p>moody and lovely.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Tech Topics Section -->
+        <section id="tech-topics">
+            <h2>$ grep tech_interests</h2>
+            <div class="tech-topics">
+                <div>
+                    <h3>Linux System</h3>
+                    <p>Arch? Nix? Void? I use them all!</p>
+                </div>
+                <div>
+                    <h3>Neovim</h3>
+                    <p>hjkl go brrrr!</p>
+                </div>
+                <div>
+                    <h3>Project Management</h3>
+                    <p>Keeping my chaos in check, yo.</p>
+                </div>
+                <div>
+                    <h3>Code Quality</h3>
+                    <p>Code so clean it shines!</p>
+                </div>
+                <div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>AWS, Azure? I’m in the clouds!</p>
+                </div>
+                <div>
+                    <h3>LLM Integration</h3>
+                    <p>AI vibes for my projects, let’s go!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Projects Section -->
+        <section id="projects">
+            <h2>$ ls projects/</h2>
+            <div class="projects">
+                <div>
+                    <h3>Plog Project</h3>
+                    <p>A blogging platform built with Bun, Fastify, and PostgreSQL for dynamic content.</p>
+                    <p>Role: Lead Dev</p>
+                    <p>Tech: HTML, CSS, JavaScript, Bun, Fastify, PostgreSQL</p>
+                    <p><a href="[GitHub Repo or Live Demo Link]">cat plog_project</a></p>
+                </div>
+                <div>
+                    <h3>Personal Site</h3>
+                    <p>My portfolio site to showcase my skills and projects with a terminal vibe.</p>
+                    <p>Role: Designer & Dev</p>
+                    <p>Tech: HTML, CSS, JavaScript</p>
+                    <p><a href="[GitHub Repo or Live Demo Link]">cat personal_site</a></p>
+                </div>
+                <div>
+                    <h3>Chatbot Therapy with Rasa</h3>
+                    <p>An AI chatbot for mental health support, powered by Rasa’s NLP.</p>
+                    <p>Role: AI Dev</p>
+                    <p>Tech: Python, Rasa, HTML, CSS</p>
+                    <p><a href="[GitHub Repo or Live Demo Link]">cat chatbot_therapy</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>echo $CONTACT: henryloth@hotmail.com</p>
+            <p>
+                <a href="[GitHub URL, e.g., https://github.com/henryloth]">github</a> |
+                <a href="[LinkedIn URL, e.g., https://linkedin.com/in/henryloth]">linkedin</a> |
+                <a href="[X URL, e.g., https://x.com/henryloth]">x</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light');
+            document.body.classList.toggle('dark');
+        }
+
+        // Typing animation for terminal
+        const typingElement = document.getElementById("terminal-typing");
+        const commandText = "./enjoy.sh";
+        let charIndex = 0;
+
+        function typeCommand() {
+            if (charIndex < commandText.length) {
+                typingElement.textContent += commandText[charIndex];
+                charIndex++;
+                setTimeout(typeCommand, 100);
+            }
+        }
+
+        window.onload = () => {
+            typeCommand();
+        };
+    </script>
+</body>
+
+</html>

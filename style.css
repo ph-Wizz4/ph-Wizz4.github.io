@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+body {
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light {
+    background: #f4f4f9;
+    color: #333333;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #1c2526;
+    color: #eceff1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.toggle-mode {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    cursor: pointer;
+    background: #546e7a;
+    color: #eceff1;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+body.light .toggle-mode {
+    background: #5c6bc0;
+}
+
+.toggle-mode:hover {
+    background: #455a64;
+}
+
+body.light .toggle-mode:hover {
+    background: #3f51b5;
+}
+
+section {
+    margin: 40px 0;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.dark section {
+    background: #263238;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #5c6bc0;
+    font-weight: 500;
+}
+
+body.dark h2 {
+    color: #80deea;
+}
+
+/* Personal Info Section */
+#personal-info {
+    text-align: left;
+    padding: 20px;
+}
+
+#personal-info p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+#personal-info p:first-of-type {
+    font-size: 1.8em;
+    color: #d81b60;
+    font-weight: 500;
+}
+
+body.dark #personal-info p:first-of-type {
+    color: #ffca28;
+}
+
+/* Terminal Styling */
+.terminal {
+    background: #2e3440;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #eceff1;
+    position: relative;
+}
+
+body.light .terminal {
+    background: #eceff1;
+    color: #333333;
+}
+
+.terminal p {
+    margin: 5px 0;
+}
+
+.terminal .command {
+    color: #80deea;
+}
+
+body.light .terminal .command {
+    color: #0288d1;
+}
+
+.terminal .output {
+    color: #b0bec5;
+}
+
+body.light .terminal .output {
+    color: #4b5e6a;
+}
+
+/* Interests Section */
+.interests {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.interests div {
+    background: #f5f7fa;
+    padding: 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+body.dark .interests div {
+    background: #37474f;
+}
+
+.interests div:hover {
+    background: #e8ecef;
+}
+
+body.dark .interests div:hover {
+    background: #455a64;
+}
+
+.interests h3 {
+    font-size: 1.1em;
+    color: #d81b60;
+    margin-bottom: 8px;
+}
+
+body.dark .interests h3 {
+    color: #ffca28;
+}
+
+.interests p {
+    font-size: 0.9em;
+    color: #4b5e6a;
+}
+
+body.dark .interests p {
+    color: #b0bec5;
+}
+
+/* Tech Topics Section */
+.tech-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.tech-topics div {
+    background: #f5f7fa;
+    padding: 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+body.dark .tech-topics div {
+    background: #37474f;
+}
+
+.tech-topics div:hover {
+    background: #e8ecef;
+}
+
+body.dark .tech-topics div:hover {
+    background: #455a64;
+}
+
+.tech-topics h3 {
+    font-size: 1.1em;
+    color: #d81b60;
+    margin-bottom: 8px;
+}
+
+body.dark .tech-topics h3 {
+    color: #ffca28;
+}
+
+.tech-topics p {
+    font-size: 0.9em;
+    color: #4b5e6a;
+}
+
+body.dark .tech-topics p {
+    color: #b0bec5;
+}
+
+/* Projects Section */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.projects div {
+    background: #f5f7fa;
+    padding: 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+body.dark .projects div {
+    background: #37474f;
+}
+
+.projects div:hover {
+    background: #e8ecef;
+}
+
+body.dark .projects div:hover {
+    background: #455a64;
+}
+
+.projects h3 {
+    font-size: 1.2em;
+    color: #d81b60;
+    margin-bottom: 8px;
+}
+
+body.dark .projects h3 {
+    color: #ffca28;
+}
+
+.projects p {
+    font-size: 0.9em;
+    color: #4b5e6a;
+}
+
+body.dark .projects p {
+    color: #b0bec5;
+}
+
+.projects a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body.dark .projects a {
+    color: #80deea;
+}
+
+.projects a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #78909c;
+}
+
+body.dark footer {
+    border-top: 2px solid #546e7a;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #4b5e6a;
+}
+
+body.dark footer p {
+    color: #b0bec5;
+}
+
+footer a {
+    color: #0288d1;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+body.dark footer a {
+    color: #80deea;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #personal-info p:first-of-type {
+        font-size: 1.5em;
+    }
+
+    .interests, .projects, .tech-topics {
+        grid-template-columns: 1fr;
+    }
+
+    .toggle-mode {
+        top: 10px;
+        right: 10px;
+        padding: 6px 10px;
+    }
+
+    .terminal {
+        font-size: 0.8em;
+    }
+}
