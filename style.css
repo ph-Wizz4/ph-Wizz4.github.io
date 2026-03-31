@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
 :root {
     --primary: #FFD700;
     --primary-muted: #e6c200;
@@ -37,6 +39,10 @@ body {
 .border-custom { border-color: var(--border); }
 .card-custom { background-color: var(--card-bg); border: 1px solid var(--border); }
 .btn-primary { background-color: var(--primary); color: #000; font-weight: 600; }
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+.border-primary { border-color: var(--primary); }
+.hover-text-primary:hover { color: var(--primary); }
 
 .hero-gradient {
     background: linear-gradient(135deg, var(--primary) 0%, transparent 100%);
