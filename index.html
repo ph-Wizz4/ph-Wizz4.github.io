@@ -1,289 +1,568 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Henry Lo — Full-Stack Software Engineer specializing in Next.js, NestJS, and Django. Building scalable fintech applications in Hong Kong.">
-    <meta property="og:title" content="Henry Lo | Full-Stack Software Engineer">
-    <meta property="og:description" content="Full-Stack Engineer with 2+ years building scalable applications. Expertise in Next.js, NestJS, and Django.">
-    <meta property="og:type" content="website">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Henry Lo — Full-Stack Software Engineer specializing in Next.js, NestJS, and Django. Building scalable fintech applications in Hong Kong."
+    />
+    <meta
+      property="og:title"
+      content="Henry Lo | Full-Stack Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack Engineer with 2+ years building scalable applications. Expertise in Next.js, NestJS, and Django."
+    />
+    <meta property="og:type" content="website" />
     <title>Henry Lo | Full-Stack Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body data-theme="dark">
-
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-[#FFD700] focus:text-black focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="dark">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-[#FFD700] focus:text-black focus:px-4 focus:py-2 focus:rounded-lg"
+      >Skip to content</a
+    >
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 border-b border-custom bg-custom bg-opacity-90 px-6 py-4 flex justify-between items-center" aria-label="Main navigation">
-        <div class="text-xl font-black tracking-tighter flex items-center gap-2">
-            <div class="w-8 h-8 bg-primary rounded flex items-center justify-center text-black">HL</div>
-            <span>HENRY.<span class="text-primary">LO</span></span>
+    <nav
+      class="fixed top-0 w-full z-50 border-b border-custom bg-custom bg-opacity-90 px-6 py-4 flex justify-between items-center"
+      aria-label="Main navigation"
+    >
+      <div class="text-xl font-black tracking-tighter flex items-center gap-2">
+        <div
+          class="w-8 h-8 bg-primary rounded flex items-center justify-center text-black"
+        >
+          HL
         </div>
-        
-        <div class="hidden md:flex gap-8 font-medium">
-            <a href="#impact" class="hover-text-primary transition">Impact</a>
-            <a href="#stack" class="hover-text-primary transition">Stack</a>
-            <a href="#experience" class="hover-text-primary transition">Experience</a>
-        </div>
+        <span>HENRY.<span class="text-primary">LO</span></span>
+      </div>
 
-        <div class="flex items-center gap-4">
-            <button id="theme-toggle" class="w-10 h-10 rounded-full border border-custom flex items-center justify-center hover:bg-primary hover:text-black transition" title="Change Theme" aria-label="Change theme">
-                <i class="fas fa-palette"></i>
-            </button>
-            <a href="mailto:henryloth@hotmail.com" class="hidden sm:block btn-primary px-5 py-2 rounded-lg" aria-label="Send email">Get in Touch</a>
-        </div>
+      <div class="hidden md:flex gap-8 font-medium">
+        <a href="#impact" class="hover-text-primary transition">Impact</a>
+        <a href="#stack" class="hover-text-primary transition">Stack</a>
+        <a href="#experience" class="hover-text-primary transition"
+          >Experience</a
+        >
+      </div>
+
+      <div class="flex items-center gap-4">
+        <button
+          id="theme-toggle"
+          class="w-10 h-10 rounded-full border border-custom flex items-center justify-center hover:bg-primary hover:text-black transition"
+          title="Change Theme"
+          aria-label="Change theme"
+        >
+          <i class="fas fa-palette"></i>
+        </button>
+        <a
+          href="mailto:henryloth@hotmail.com"
+          class="hidden sm:block btn-primary px-5 py-2 rounded-lg"
+          aria-label="Send email"
+          >Get in Touch</a
+        >
+      </div>
     </nav>
 
     <main id="main-content">
-    <!-- Hero Section -->
-    <header class="relative pt-32 pb-20 px-6 max-w-6xl mx-auto overflow-hidden">
+      <!-- Hero Section -->
+      <header
+        class="relative pt-32 pb-20 px-6 max-w-6xl mx-auto overflow-hidden"
+      >
         <div class="hero-gradient"></div>
         <div class="relative z-10">
-            <div class="tag mb-4 inline-block">Seeking Mid-Level Backend Roles in HK Fintech</div>
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
-                Full-Stack Engineer <br>Focused on <span class="text-primary">Impact.</span>
-            </h1>
-            <p class="text-xl opacity-80 max-w-2xl mb-10 leading-relaxed">
-                I'm Henry, a Full-Stack Software Engineer with 2+ years of experience building scalable applications. Expertise in <span class="text-primary">Next.js (React), NestJS, and Django</span>, with a passion for architectural reliability and performance optimization.
-            </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#impact" class="btn-primary px-8 py-4 rounded-xl flex items-center gap-2">
-                    View Project Impact <i class="fas fa-arrow-right"></i>
-                </a>
-                <div class="flex items-center gap-6 px-4">
-                    <a href="https://github.com/ph-wizz4" target="_blank" class="text-2xl hover-text-primary" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
-                    <a href="mailto:henryloth@hotmail.com" class="text-2xl hover-text-primary" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://ph-wizz4.github.io/" target="_blank" class="text-2xl hover-text-primary" aria-label="Personal website"><i class="fas fa-globe"></i></a>
-                </div>
+          <div class="tag mb-4 inline-block">
+            Seeking Mid-Level Backend Roles in HK Fintech
+          </div>
+          <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+            Full-Stack Engineer <br />Focused on
+            <span class="text-primary">Impact.</span>
+          </h1>
+          <p class="text-xl opacity-80 max-w-2xl mb-10 leading-relaxed">
+            I'm Henry, a Full-Stack Software Engineer with 2+ years of
+            experience building scalable applications. Expertise in
+            <span class="text-primary">Next.js (React), NestJS, and Django</span
+            >, with a passion for architectural reliability and performance
+            optimization.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#impact"
+              class="btn-primary px-8 py-4 rounded-xl flex items-center gap-2"
+            >
+              View Project Impact <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="flex items-center gap-6 px-4">
+              <a
+                href="https://github.com/ph-wizz4"
+                target="_blank"
+                class="text-2xl hover-text-primary"
+                aria-label="GitHub profile"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="mailto:henryloth@hotmail.com"
+                class="text-2xl hover-text-primary"
+                aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a
+                href="https://ph-wizz4.github.io/"
+                target="_blank"
+                class="text-2xl hover-text-primary"
+                aria-label="Personal website"
+                ><i class="fas fa-globe"></i
+              ></a>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <!-- Impact / Featured Projects Section -->
-    <section id="impact" class="py-20 px-6 max-w-6xl mx-auto">
+      <!-- Impact / Featured Projects Section -->
+      <section id="impact" class="py-20 px-6 max-w-6xl mx-auto">
         <div class="flex justify-between items-end mb-12">
-            <div>
-                <h2 class="text-3xl font-black mb-2">Featured Impact</h2>
-                <p class="opacity-60">Solving business challenges through engineering excellence.</p>
-            </div>
-            <div class="hidden md:block h-px flex-grow mx-8 bg-gray-800 opacity-20"></div>
+          <div>
+            <h2 class="text-3xl font-black mb-2">Featured Impact</h2>
+            <p class="opacity-60">
+              Solving business challenges through engineering excellence.
+            </p>
+          </div>
+          <div
+            class="hidden md:block h-px flex-grow mx-8 bg-gray-800 opacity-20"
+          ></div>
         </div>
 
         <div class="grid md:grid-cols-3 gap-8">
-            <!-- Case Study 1 -->
-            <div class="card-custom rounded-2xl overflow-hidden group">
-                <div class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center">
-                    <i class="fas fa-database text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"></i>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
-                    <div class="absolute bottom-4 left-6">
-                        <span class="bg-primary text-black text-xs font-bold px-2 py-1 rounded">SYSTEM MIGRATION</span>
-                    </div>
-                </div>
-                <div class="p-8">
-                    <h3 class="text-xl font-bold mb-3">Database Schema Revamp</h3>
-                    <p class="opacity-70 text-sm mb-6">Executed a staged system migration and database schema overhaul. Incorporated optimized algorithms to significantly enhance data processing efficiency and query performance.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] border border-custom px-2 py-1 rounded">Django</span>
-                        <span class="text-[10px] border border-custom px-2 py-1 rounded">PostgreSQL</span>
-                    </div>
-                </div>
+          <!-- Case Study 1 -->
+          <div class="card-custom rounded-2xl overflow-hidden group">
+            <div
+              class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center"
+            >
+              <i
+                class="fas fa-database text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"
+              ></i>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-6">
+                <span
+                  class="bg-primary text-black text-xs font-bold px-2 py-1 rounded"
+                  >SYSTEM MIGRATION</span
+                >
+              </div>
             </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-3">Database Schema Revamp</h3>
+              <p class="opacity-70 text-sm mb-6">
+                Executed a staged system migration and database schema overhaul.
+                Incorporated optimized algorithms to significantly enhance data
+                processing efficiency and query performance.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >Django</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >PostgreSQL</span
+                >
+              </div>
+            </div>
+          </div>
 
-            <!-- Case Study 2 -->
-            <div class="card-custom rounded-2xl overflow-hidden group">
-                <div class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center">
-                    <i class="fas fa-rocket text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"></i>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
-                    <div class="absolute bottom-4 left-6">
-                        <span class="bg-primary text-black text-xs font-bold px-2 py-1 rounded">MVP DEVELOPMENT</span>
-                    </div>
-                </div>
-                <div class="p-8">
-                    <h3 class="text-xl font-bold mb-3">Fintech Prototype Development</h3>
-                    <p class="opacity-70 text-sm mb-6">Led the system design of a prototype from POC to MVP stage. Integrated NestJS for backend enhancements and Next.js for modern frontend features.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] border border-custom px-2 py-1 rounded">NestJS</span>
-                        <span class="text-[10px] border border-custom px-2 py-1 rounded">Next.js</span>
-                    </div>
-                </div>
+          <!-- Case Study 2 -->
+          <div class="card-custom rounded-2xl overflow-hidden group">
+            <div
+              class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center"
+            >
+              <i
+                class="fas fa-rocket text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"
+              ></i>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-6">
+                <span
+                  class="bg-primary text-black text-xs font-bold px-2 py-1 rounded"
+                  >MVP DEVELOPMENT</span
+                >
+              </div>
             </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-3">
+                Fintech Prototype Development - MVP to Production
+              </h3>
+              <p class="opacity-70 text-sm mb-6">
+                Led the system design of a prototype from POC to MVP stage.
+                Integrated NestJS for backend enhancements and Next.js for
+                modern frontend features.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >NestJS</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >Next.js</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >AWS</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >CI/CD</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >TANSTACK</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >shadcn</span
+                >
+              </div>
+            </div>
+          </div>
 
-            <!-- Case Study 3 -->
-            <div class="card-custom rounded-2xl overflow-hidden group">
-                <div class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center">
-                    <i class="fas fa-bolt text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"></i>
-                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
-                    <div class="absolute bottom-4 left-6">
-                        <span class="bg-primary text-black text-xs font-bold px-2 py-1 rounded">PERFORMANCE TUNING</span>
-                    </div>
-                </div>
-                <div class="p-8">
-                    <h3 class="text-xl font-bold mb-3">Core Calculation Refactor</h3>
-                    <p class="opacity-70 text-sm mb-6">Refactored legacy calculation logic for financial quantitative analysis. Improved overall calculation speed by 30% through algorithmic optimization and cache implementation.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[10px] border border-custom px-2 py-1 rounded">Python</span>
-                        <span class="text-[10px] border border-custom px-2 py-1 rounded">Redis</span>
-                    </div>
-                </div>
+          <!-- Case Study 3 -->
+          <div class="card-custom rounded-2xl overflow-hidden group">
+            <div
+              class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center"
+            >
+              <i
+                class="fas fa-bolt text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"
+              ></i>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-6">
+                <span
+                  class="bg-primary text-black text-xs font-bold px-2 py-1 rounded"
+                  >PERFORMANCE ENHANCEMENT</span
+                >
+              </div>
             </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-3">
+                Core Calculation Refactor - Performance Boost
+              </h3>
+              <p class="opacity-70 text-sm mb-6">
+                Refactored legacy calculation logic for financial operations.
+                30% algorithmic improvement after optimization.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >Django</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >TDD</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >AWS</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Case Study 4 -->
+          <div class="card-custom rounded-2xl overflow-hidden group">
+            <div
+              class="h-48 bg-gray-900 relative overflow-hidden flex items-center justify-center"
+            >
+              <i
+                class="fas fa-bolt text-6xl text-primary opacity-20 group-hover:opacity-100 transition duration-500"
+              ></i>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"
+              ></div>
+              <div class="absolute bottom-4 left-6">
+                <span
+                  class="bg-primary text-black text-xs font-bold px-2 py-1 rounded"
+                  >SYSTEM ENHANCEMENT</span
+                >
+              </div>
+            </div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-3">
+                Feature enhancement - UX Boost
+              </h3>
+              <p class="opacity-70 text-sm mb-6">
+                Applied caching, and pagination to admin dashboard. Boosts
+                responsiveness by 40%.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >Django</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >TDD</span
+                >
+                <span class="text-[10px] border border-custom px-2 py-1 rounded"
+                  >AWS</span
+                >
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Tech Stack Section -->
-    <section id="stack" class="py-20 bg-opacity-50 bg-black">
+      <!-- Tech Stack Section -->
+      <section id="stack" class="py-20 bg-opacity-50 bg-black">
         <div class="px-6 max-w-6xl mx-auto">
-            <h2 class="text-3xl font-black mb-12 text-center">Technical Arsenal</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <!-- Backend -->
-                <div>
-                    <h4 class="text-primary font-bold mb-6 flex items-center gap-2">
-                        <i class="fas fa-server"></i> Backend & DB
-                    </h4>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-center"><span>Node.js / NestJS</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>Django / Spring Boot</span> <span class="opacity-50 text-sm">Proficient</span></li>
-                        <li class="flex justify-between items-center"><span>PostgreSQL / MySQL</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>Redis / MongoDB</span> <span class="opacity-50 text-sm">Proficient</span></li>
-                    </ul>
-                </div>
-                <!-- Frontend -->
-                <div>
-                    <h4 class="text-primary font-bold mb-6 flex items-center gap-2">
-                        <i class="fas fa-code"></i> Frontend
-                    </h4>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-center"><span>React / Next.js</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>TypeScript</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>MUI / shadcn/ui</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>jQuery / HeroUI</span> <span class="opacity-50 text-sm">Proficient</span></li>
-                    </ul>
-                </div>
-                <!-- DevOps -->
-                <div>
-                    <h4 class="text-primary font-bold mb-6 flex items-center gap-2">
-                        <i class="fas fa-cloud"></i> DevOps & Tools
-                    </h4>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between items-center"><span>AWS (RDS, S3, ECS)</span> <span class="opacity-50 text-sm">Hands-on</span></li>
-                        <li class="flex justify-between items-center"><span>Docker / Linux</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>GitHub Actions (CI/CD)</span> <span class="opacity-50 text-sm">Advanced</span></li>
-                        <li class="flex justify-between items-center"><span>Agile / Mentorship</span> <span class="opacity-50 text-sm">Expert</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+          <h2 class="text-3xl font-black mb-12 text-center">
+            Technical Arsenal
+          </h2>
 
-    <!-- Experience Timeline -->
-    <section id="experience" class="py-20 px-6 max-w-4xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Backend -->
+            <div>
+              <h4 class="text-primary font-bold mb-6 flex items-center gap-2">
+                <i class="fas fa-server"></i> Backend & DB
+              </h4>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center">
+                  <span>Node.js / NestJS</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>Django / Spring Boot</span>
+                  <span class="opacity-50 text-sm">Proficient</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>PostgreSQL / MySQL</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>Redis / MongoDB</span>
+                  <span class="opacity-50 text-sm">Proficient</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Frontend -->
+            <div>
+              <h4 class="text-primary font-bold mb-6 flex items-center gap-2">
+                <i class="fas fa-code"></i> Frontend
+              </h4>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center">
+                  <span>React / Next.js</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>TypeScript</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>MUI / shadcn/ui</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>jQuery / HeroUI</span>
+                  <span class="opacity-50 text-sm">Proficient</span>
+                </li>
+              </ul>
+            </div>
+            <!-- DevOps -->
+            <div>
+              <h4 class="text-primary font-bold mb-6 flex items-center gap-2">
+                <i class="fas fa-cloud"></i> DevOps & Tools
+              </h4>
+              <ul class="space-y-4">
+                <li class="flex justify-between items-center">
+                  <span>AWS (RDS, S3, ECS)</span>
+                  <span class="opacity-50 text-sm">Hands-on</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>Docker / Linux</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>GitHub Actions (CI/CD)</span>
+                  <span class="opacity-50 text-sm">Advanced</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span>Agile / Mentorship</span>
+                  <span class="opacity-50 text-sm">Expert</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Timeline -->
+      <section id="experience" class="py-20 px-6 max-w-4xl mx-auto">
         <h2 class="text-3xl font-black mb-16">Professional Journey</h2>
-        
+
         <div class="relative space-y-16">
-            <div class="timeline-line"></div>
+          <div class="timeline-line"></div>
 
-            <!-- Job 1 -->
-            <div class="relative pl-12">
-                <div class="timeline-dot" style="top: 8px;"></div>
-                <div class="flex flex-wrap justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold text-primary">Full Stack Developer @ FangWei Tech</h3>
-                    <span class="opacity-50 text-sm">AUG 2024 — PRESENT</span>
-                </div>
-                <p class="opacity-70 mb-4 leading-relaxed">
-                    Spearheading POC-to-MVP system architecture for high-growth prototypes. 
-                    Optimizing large-scale system migrations and database schema revamps.
-                    Mentoring a team of 2+ junior developers to ensure code quality and timely shipping.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30">Django</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30">Node.js</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30">NestJS</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30">Next.js</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30">PostgreSQL</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30">AWS</span>
-                </div>
+          <!-- Job 1 -->
+          <div class="relative pl-12">
+            <div class="timeline-dot" style="top: 8px"></div>
+            <div class="flex flex-wrap justify-between items-start mb-2">
+              <h3 class="text-xl font-bold text-primary">
+                Full Stack Developer @ FangWei Tech
+              </h3>
+              <span class="opacity-50 text-sm">AUG 2024 — PRESENT</span>
             </div>
+            <p class="opacity-70 mb-4 leading-relaxed">
+              Spearheading POC-to-MVP system architecture for high-growth
+              prototypes. Optimizing large-scale system migrations and database
+              schema revamps. Mentoring a team of 2+ junior developers to ensure
+              code quality and timely shipping.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30"
+                >Django</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30"
+                >Node.js</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30"
+                >NestJS</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30"
+                >Next.js</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30"
+                >PostgreSQL</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-primary border border-primary/30"
+                >AWS</span
+              >
+            </div>
+          </div>
 
-            <!-- Job 2 -->
-            <div class="relative pl-12">
-                <div class="timeline-dot" style="top: 8px;"></div>
-                <div class="flex flex-wrap justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold">Programmer @ Innovation Fintech</h3>
-                    <span class="opacity-50 text-sm">NOV 2023 — AUG 2024</span>
-                </div>
-                <p class="opacity-70 mb-4 leading-relaxed">
-                    Developed and maintained microservices architecture to support rapid R&D cycles. 
-                    Engineered proof-of-concept algorithms for quantitative financial analysis and 
-                    provided critical production support to maintain system uptime.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700">Java Spring Boot</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700">Node.js</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700">MySQL</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700">Python</span>
-                </div>
+          <!-- Job 2 -->
+          <div class="relative pl-12">
+            <div class="timeline-dot" style="top: 8px"></div>
+            <div class="flex flex-wrap justify-between items-start mb-2">
+              <h3 class="text-xl font-bold">Programmer @ Innovation Fintech</h3>
+              <span class="opacity-50 text-sm">NOV 2023 — AUG 2024</span>
             </div>
+            <p class="opacity-70 mb-4 leading-relaxed">
+              Developed and maintained microservices architecture to support
+              rapid R&D cycles. Engineered proof-of-concept algorithms for
+              quantitative financial analysis and provided critical production
+              support to maintain system uptime.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700"
+                >Java Spring Boot</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700"
+                >Node.js</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700"
+                >MySQL</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white border border-gray-700"
+                >Python</span
+              >
+            </div>
+          </div>
 
-            <!-- Internship -->
-            <div class="relative pl-12 opacity-60">
-                <div class="timeline-dot" style="top: 8px;"></div>
-                <div class="flex flex-wrap justify-between items-start mb-2">
-                    <h3 class="text-xl font-bold italic">Programmer Trainee (Intern) @ Esri China</h3>
-                    <span class="opacity-50 text-sm">MAY 2022 — AUG 2022</span>
-                </div>
-                <p class="opacity-70 mb-4 leading-relaxed">
-                    Assisted in web development using jQuery and prototyping mobile applications. 
-                    Established data pipelines with custom Python scripting for GIS data.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white/50 border border-gray-700">jQuery</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white/50 border border-gray-700">Python</span>
-                    <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white/50 border border-gray-700">Android Java</span>
-                </div>
+          <!-- Internship -->
+          <div class="relative pl-12 opacity-60">
+            <div class="timeline-dot" style="top: 8px"></div>
+            <div class="flex flex-wrap justify-between items-start mb-2">
+              <h3 class="text-xl font-bold italic">
+                Programmer Trainee (Intern) @ Esri China
+              </h3>
+              <span class="opacity-50 text-sm">MAY 2022 — AUG 2022</span>
             </div>
+            <p class="opacity-70 mb-4 leading-relaxed">
+              Assisted in web development using jQuery and prototyping mobile
+              applications. Established data pipelines with custom Python
+              scripting for GIS data.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white/50 border border-gray-700"
+                >jQuery</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white/50 border border-gray-700"
+                >Python</span
+              >
+              <span
+                class="text-[10px] font-bold uppercase tracking-wider bg-gray-800 px-2 py-1 rounded text-white/50 border border-gray-700"
+                >Android Java</span
+              >
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Education -->
-    <section class="py-20 px-6 max-w-4xl mx-auto border-t border-custom">
+      <!-- Education -->
+      <section class="py-20 px-6 max-w-4xl mx-auto border-t border-custom">
         <div class="flex items-center gap-4 mb-8">
-            <h2 class="text-3xl font-black">Academic Foundation</h2>
-            <div class="h-px flex-grow bg-gray-800 opacity-20"></div>
+          <h2 class="text-3xl font-black">Academic Foundation</h2>
+          <div class="h-px flex-grow bg-gray-800 opacity-20"></div>
         </div>
         <div class="card-custom p-8 rounded-2xl">
-            <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-bold">BSc (Hons) in Information Technology</h3>
-                <span class="text-primary font-bold">PolyU | 2022</span>
-            </div>
-            <p class="opacity-70 mb-6">
-                <strong>Final Year Project:</strong> Developed a Cantonese therapy chatbot using NLP and Machine Learning. 
-                Awarded as an invited member of the unofficial Cantonese chatbot development team.
-            </p>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-mono opacity-50">
-                <span>• Data Structures</span>
-                <span>• Algorithms</span>
-                <span>• Cloud Computing</span>
-                <span>• AI/ML</span>
-            </div>
+          <div class="flex justify-between items-start mb-4">
+            <h3 class="text-xl font-bold">
+              BSc (Hons) in Information Technology
+            </h3>
+            <span class="text-primary font-bold">PolyU | 2022</span>
+          </div>
+          <p class="opacity-70 mb-6">
+            <strong>Final Year Project:</strong> Developed a Cantonese therapy
+            chatbot using NLP and Machine Learning. Awarded as an invited member
+            of the unofficial Cantonese chatbot development team.
+          </p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-mono opacity-50"
+          >
+            <span>• Data Structures</span>
+            <span>• Algorithms</span>
+            <span>• Cloud Computing</span>
+            <span>• AI/ML</span>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer class="py-20 border-t border-custom bg-custom">
+      <!-- Footer -->
+      <footer class="py-20 border-t border-custom bg-custom">
         <div class="px-6 max-w-6xl mx-auto text-center">
-            <h2 class="text-4xl md:text-5xl font-black mb-8">Let's build the <span class="text-primary">future</span>.</h2>
-            <div class="flex flex-wrap justify-center gap-6 mb-12">
-                <a href="mailto:henryloth@hotmail.com" class="btn-primary px-10 py-4 rounded-xl text-lg" aria-label="Send email">Email Me</a>
-                <a href="https://ph-wizz4.github.io/" target="_blank" class="border border-custom px-10 py-4 rounded-xl text-lg hover:bg-white hover:text-black transition" aria-label="Visit personal site">Personal Site</a>
-            </div>
-            <p class="opacity-40 text-sm">&copy; <span id="year"></span> Henry Lo — Full-Stack Engineer.</p>
+          <h2 class="text-4xl md:text-5xl font-black mb-8">
+            Let's build the <span class="text-primary">future</span>.
+          </h2>
+          <div class="flex flex-wrap justify-center gap-6 mb-12">
+            <a
+              href="mailto:henryloth@hotmail.com"
+              class="btn-primary px-10 py-4 rounded-xl text-lg"
+              aria-label="Send email"
+              >Email Me</a
+            >
+            <a
+              href="https://ph-wizz4.github.io/"
+              target="_blank"
+              class="border border-custom px-10 py-4 rounded-xl text-lg hover:bg-white hover:text-black transition"
+              aria-label="Visit personal site"
+              >Personal Site</a
+            >
+          </div>
+          <p class="opacity-40 text-sm">
+            &copy; <span id="year"></span> Henry Lo — Full-Stack Engineer.
+          </p>
         </div>
-    </footer>
+      </footer>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
