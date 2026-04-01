@@ -25,14 +25,19 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style.css" />
     <script>
-      (function() {
-        const themes = ['dark', 'light', 'oled'];
-        const saved = localStorage.getItem('theme');
+      (function () {
+        const themes = ["dark", "light", "oled"];
+        const saved = localStorage.getItem("theme");
         if (saved && themes.includes(saved)) {
-          document.documentElement.setAttribute('data-theme', saved);
+          document.documentElement.setAttribute("data-theme", saved);
         } else if (!saved) {
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+          const prefersDark = window.matchMedia(
+            "(prefers-color-scheme: dark)",
+          ).matches;
+          document.documentElement.setAttribute(
+            "data-theme",
+            prefersDark ? "dark" : "light",
+          );
         }
       })();
     </script>
@@ -91,13 +96,13 @@
       >
         <div class="hero-gradient"></div>
         <div class="relative z-10">
-          <div class="tag mb-4 inline-block">
-            Seeking Mid-Level Backend Roles in HK Fintech
-          </div>
           <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
             Full-Stack Engineer <br />Focused on
             <span class="text-primary">Impact.</span>
           </h1>
+          <div class="tag mb-4 inline-block">
+            Seeking Mid-Level Backend Roles in HK Fintech
+          </div>
           <p class="text-xl opacity-80 max-w-2xl mb-10 leading-relaxed">
             I'm Henry, a Full-Stack Software Engineer with 2+ years of
             experience building scalable applications. Expertise in
@@ -592,28 +597,64 @@
           <div class="const-node const-node-top">
             <i class="fas fa-brain text-primary"></i>
             <h3 class="font-bold">AI & LLMs</h3>
-            <p class="opacity-60 text-sm">Exploring LLM capabilities following <a href="https://www.youtube.com/@vizuara" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">@vizuara</a></p>
+            <p class="opacity-60 text-sm">
+              Exploring LLM capabilities following
+              <a
+                href="https://www.youtube.com/@vizuara"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+                >@vizuara</a
+              >
+            </p>
           </div>
 
           <!-- Left: Linux -->
           <div class="const-node const-node-left">
             <i class="fab fa-linux text-primary"></i>
             <h3 class="font-bold">Linux Everything</h3>
-            <p class="opacity-60 text-sm">Daily-driven Arch & Fedora. Tinkering dotfiles.</p>
+            <p class="opacity-60 text-sm">
+              Daily-driven Arch & Fedora. Tinkering dotfiles.
+            </p>
           </div>
 
           <!-- Right: Terminal -->
           <div class="const-node const-node-right">
             <i class="fas fa-terminal text-primary"></i>
             <h3 class="font-bold">Terminal Workflow</h3>
-            <p class="opacity-60 text-sm"><a href="https://github.com/ph-Wizz4/tmux-config" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">tmux</a> + <a href="https://github.com/ph-Wizz4/nvim-config-lazy" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Neovim</a>. Keyboard-first, always.</p>
+            <p class="opacity-60 text-sm">
+              <a
+                href="https://github.com/ph-Wizz4/tmux-config"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+                >tmux</a
+              >
+              +
+              <a
+                href="https://github.com/ph-Wizz4/nvim-config-lazy"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+                >Neovim</a
+              >. Keyboard-first, always.
+            </p>
           </div>
 
           <!-- Bottom: AI Dev -->
           <div class="const-node const-node-bottom">
             <i class="fas fa-robot text-primary"></i>
             <h3 class="font-bold">AI-Powered Dev</h3>
-            <p class="opacity-60 text-sm">Building workflows around AI coding assistants. <a href="https://github.com/ph-Wizz4/my-agent-skills" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">my-agent-skills</a></p>
+            <p class="opacity-60 text-sm">
+              Building workflows around AI coding assistants.
+              <a
+                href="https://github.com/ph-Wizz4/my-agent-skills"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-primary hover:underline"
+                >my-agent-skills</a
+              >
+            </p>
           </div>
         </div>
       </section>
